@@ -10,7 +10,7 @@
     "testing": {
       "config_id": "testing",
       "node_port": 5000,
-      "database": "",
+      "database": "/testesp",
       "databaseUrl": "mongodb://localhost:27017",
       "AppToken": "",
       "SecretToken": ""
@@ -18,7 +18,7 @@
     "production": {
       "config_id": "production",
       "node_port": 3000,
-      "database": "",
+      "database": "/testesp",
       "databaseUrl": "mongodb://localhost:27017",
       "AppToken": "",
       "SecretToken": ""
