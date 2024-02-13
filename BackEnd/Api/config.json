@@ -3,7 +3,7 @@
       "config_id": "development",
       "node_port": 5000,
       "database": "/testesp",
-      "databaseUrl": "mongodb://localhost:27017",
+      "databaseUrl": "mongodb+srv://admin:wL1ei3q497OC2G08@dbaas-db-7021846-7cd44e03.mongo.ondigitalocean.com/testesp?authSource=admin&replicaSet=dbaas-db-7021846&tls=true",
       "AppToken": "",
       "SecretToken": ""
     },
@@ -11,7 +11,7 @@
       "config_id": "testing",
       "node_port": 5000,
       "database": "/testesp",
-      "databaseUrl": "mongodb://localhost:27017",
+      "databaseUrl": "mongodb+srv://admin:wL1ei3q497OC2G08@dbaas-db-7021846-7cd44e03.mongo.ondigitalocean.com/testesp?authSource=admin&replicaSet=dbaas-db-7021846&tls=true",
       "AppToken": "",
       "SecretToken": ""
     },
@@ -19,7 +19,7 @@
       "config_id": "production",
       "node_port": 3000,
       "database": "/testesp",
-      "databaseUrl": "mongodb://localhost:27017",
+      "databaseUrl": "mongodb+srv://admin:wL1ei3q497OC2G08@dbaas-db-7021846-7cd44e03.mongo.ondigitalocean.com/testesp?authSource=admin&replicaSet=dbaas-db-7021846&tls=true",
       "AppToken": "",
       "SecretToken": ""
     }
