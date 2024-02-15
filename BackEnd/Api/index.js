@@ -9,7 +9,7 @@ const express = require('express');
 const app = express();
 
 const corsOptions = {
-    origin: 'https://142.93.153.109', // Spécifiez l'origine autorisée
+    origin: 'https://oyster-app-3hbeh.ondigitalocean.app', // Spécifiez l'origine autorisée
     methods: 'GET,PUT,POST,DELETE', // Spécifiez les méthodes HTTP autorisées
     optionsSuccessStatus: 200 // Spécifiez le code de statut pour les options de pré-vérification réussies
 };
