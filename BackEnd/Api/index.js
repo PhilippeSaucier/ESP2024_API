@@ -1,5 +1,5 @@
 const config = require('./config.json');
-const environmentConfig = config['development'];
+const environmentConfig = config['production'];
 const https = require('https');
 const fs = require('fs');
 
