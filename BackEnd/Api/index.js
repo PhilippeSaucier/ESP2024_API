@@ -1,5 +1,6 @@
 const config = require('./config.json');
 const environmentConfig = config['development'];
+const https = require('https');
 global.gConfig = environmentConfig;
 const port = global.gConfig.node_port;
 
@@ -55,8 +56,14 @@ app.get('/', (req, res) => {
     res.status(200).json({ message: 'Veuillez appeler vos commandes dans /api/...' });
 });
 
-// Laissez le middleware CORS gérer l'en-tête Access-Control-Allow-Origin
-
-app.listen(port, () => {
-    console.log('RESTful API server <questionnaireAPI> and started on: ' + port);
-});
+https
+  .createServer(
+    {
+      key: fs.readFileSync("key.pem"),
+      cert: fs.readFileSync("cert.pem"),
+    },
+    app
+  )
+  .listen(port, () => {
+    console.log("serever is runing at port 4000");
+  });
