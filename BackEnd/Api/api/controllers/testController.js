@@ -16,7 +16,6 @@ exports.test = async function (req, res) {
 };
 
 exports.add = async function (req, res) {
-    console.log(req.body);
     try {
         const newMessage = await mongooseTest.create(req.body);
         res.json(newMessage);
