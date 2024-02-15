@@ -67,5 +67,5 @@ https
     app
   )
   .listen(port, () => {
-    console.log("serever is runing at port 4000");
+    console.log('RESTful API server <questionnaireAPI> and started on: ' + port);
   });
