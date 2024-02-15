@@ -2,7 +2,6 @@
     "development": {
       "config_id": "development",
       "node_port": 5000,
-      "database": "/testesp",
       "databaseUrl": "mongodb://127.0.0.1:27017/testesp",
       "AppToken": "",
       "SecretToken": "",
@@ -12,7 +11,6 @@
     "production": {
       "config_id": "production",
       "node_port": 5000,
-      "database": "/testesp",
       "databaseUrl": "mongodb+srv://admin:wL1ei3q497OC2G08@dbaas-db-7021846-7cd44e03.mongo.ondigitalocean.com/testesp?authSource=admin&replicaSet=dbaas-db-7021846&tls=true",
       "AppToken": "",
       "SecretToken": "",
