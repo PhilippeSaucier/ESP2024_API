@@ -35,7 +35,7 @@ const swaggerOptions = {
                 url: 'https://cegeprdl.ca',
                 email: 'philippe.saucier.cegep@gmail.com'
             },
-            servers: ["https://142.93.153.109"]
+            servers: ["http://142.93.153.109"]
         }
     },
     apis: ["./api/routes/*.js"],
