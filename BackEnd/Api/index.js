@@ -8,7 +8,15 @@ const cors = require("cors"); // Importer le middleware CORS
 const express = require('express');
 const app = express();
 
-app.use(cors()); // Utiliser le middleware CORS pour toutes les routes
+const corsOptions = {
+    origin: 'https://142.93.153.109', // Spécifiez l'origine autorisée
+    methods: 'GET,PUT,POST,DELETE', // Spécifiez les méthodes HTTP autorisées
+    optionsSuccessStatus: 200 // Spécifiez le code de statut pour les options de pré-vérification réussies
+};
+app.use(cors(corsOptions));
+
+
+// app.use(cors()); // Utiliser le middleware CORS pour toutes les routes
 
 app.use(express.json());
 
@@ -27,7 +35,7 @@ const swaggerOptions = {
                 url: 'https://cegeprdl.ca',
                 email: 'philippe.saucier.cegep@gmail.com'
             },
-            servers: ["http://localhost:3000"]
+            servers: ["https://142.93.153.109"]
         }
     },
     apis: ["./api/routes/*.js"],
