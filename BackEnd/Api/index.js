@@ -1,6 +1,8 @@
 const config = require('./config.json');
 const environmentConfig = config['development'];
 const https = require('https');
+const fs = require('fs');
+
 global.gConfig = environmentConfig;
 const port = global.gConfig.node_port;
 
