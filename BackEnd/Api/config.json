@@ -2,7 +2,7 @@
     "development": {
       "config_id": "development",
       "node_port": 5000,
-      "databaseUrl": "mongodb://127.0.0.1:27017/testesp",
+      "databaseUrl": "mongodb://127.0.0.1:27017/espessai",
       "AppToken": "",
       "SecretToken": "",
       "corsOptions": {}
