@@ -11,12 +11,8 @@ const cors = require("cors"); // Importer le middleware CORS
 const express = require('express');
 const app = express();
 
-
-
 const corsOptions = global.gConfig.corsOptions;
 app.use(cors(corsOptions));
-
-
 
 app.use(express.json());
 
@@ -47,8 +43,8 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJSDoc(swaggerOptions);
 app.use('/myApiDocs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 
-const testRoutes = require('./api/routes/testRoutes.js');
-app.use("/api", testRoutes);
+// const testRoutes = require('./api/routes/testRoutes.js');
+// app.use("/api", testRoutes);
 
 // Route par défaut
 app.get('/', (req, res) => {

@@ -1,4 +1,4 @@
-const mongooseTest = require('../models/testModels');
+const mongooseUsers = require('../models/usersModels');
 
 var express = require('express'),
     app = express(),
@@ -7,7 +7,7 @@ app.use(express.json());
 
 exports.test = async function (req, res) {
     try {
-        const messages = await mongooseTest.find({}, 'message');
+        const messages = await mongooseUsers.find({}, 'message');
         const messageArray = messages.map(message => message.message);
         res.json(messageArray);
     } catch (err) {
@@ -16,9 +16,8 @@ exports.test = async function (req, res) {
 };
 
 exports.add = async function (req, res) {
-    console.log(req.body);
     try {
-        const newMessage = await mongooseTest.create(req.body);
+        const newMessage = await mongooseUsers.create(req.body);
         res.json(newMessage);
     } catch (err) {
         res.send(err);
@@ -27,7 +26,7 @@ exports.add = async function (req, res) {
 
 exports.delete = async function (req, res) {
     try {
-        const deletedMessage = await mongooseTest.deleteOne({ message: req.body.message });
+        const deletedMessage = await mongooseUsers.deleteOne({ message: req.body.message });
         res.json(deletedMessage);
     }
     catch (err) {
