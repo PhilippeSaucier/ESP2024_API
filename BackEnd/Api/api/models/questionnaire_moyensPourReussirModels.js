@@ -9,9 +9,6 @@ var questionnaire_moyensPourReussirShema = new mongoose.Schema({
     "titre": {
         "type": "String"
     },
-    "sousTitre": {
-        "type": "String"
-    },
     "instruction": {
         "type": "String"
     },
