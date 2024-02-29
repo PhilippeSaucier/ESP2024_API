@@ -3,7 +3,7 @@ var MongoClient = require('mongodb').MongoClient;
 var url = global.gConfig.databaseUrl;
 
 var mongoose = require("mongoose");
-// mongoose.connect(url);
+mongoose.connect(url);
 
 var questionnaire_monChoixProgrammeShema = new mongoose.Schema({
     "titre": {

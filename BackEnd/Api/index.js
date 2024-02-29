@@ -11,12 +11,8 @@ const cors = require("cors"); // Importer le middleware CORS
 const express = require('express');
 const app = express();
 
-
-
 const corsOptions = global.gConfig.corsOptions;
 app.use(cors(corsOptions));
-
-
 
 app.use(express.json());
 
