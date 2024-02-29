@@ -14,6 +14,11 @@ const app = express();
 const corsOptions = global.gConfig.corsOptions;
 app.use(cors(corsOptions));
 
+const mongooseUsers = require('./api/models/usersModels');
+const mongooseQuestionnaire_monChoixProgramme = require('./api/models/questionnaire_monChoixProgrammeModels');
+const mongooseQuestionnaire_moyensPourReussir = require('./api/models/questionnaire_moyensPourReussirModels');
+const mongooseQuestionnaire_monProgrammeEtudes = require('./api/models/questionnaire_monProgrammeEtudesModels');
+
 app.use(express.json());
 
 // Swagger part (documentation)
