@@ -43,8 +43,10 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJSDoc(swaggerOptions);
 app.use('/myApiDocs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 
-// const testRoutes = require('./api/routes/testRoutes.js');
-// app.use("/api", testRoutes);
+// Routes
+const authRoute = require('./api/routes/authRoute');
+
+app.use('/api/auth', authRoute);
 
 // Route par défaut
 app.get('/', (req, res) => {
